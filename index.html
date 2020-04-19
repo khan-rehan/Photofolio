@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[Your name] Portfolio</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+      <!---Nav bar--->
+        <table>
+            <tr>
+                <td id="logo">[Your name]</td>
+                <td id="navigation">
+                    <a href="">Home</a>
+                    <a href="#bio">About</a>
+                    <a href="#work">Multimedia</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+
+       <!--End of navbar--> 
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>[Your] Current Project/Research/Assignment</h1>
+                <p>Describe your Project/Research/Assignment</p>
+                <button onclick="location.href='!#'" type="button" class="btn_one">
+                    Resume</button>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+
+<!---about--> 
+
+    <div id="bio">
+        <h1>About</h1>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+
+<!---end of about-->
+
+<!-- Work--->  
+    <div id="work">
+        <h1>Multimedia</h1>
+
+  <!--Photos-->
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="img/1.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="img/2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="img/3.jpg">
+          </div>
+  <!--End of Photos-->
+<!--End of Work-->
+
+<!---Contact-->
+
+    <div id="contact">
+        <h1>contact</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +1-202-555-0196</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; xyz@gmail.com</td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fas fa-fax"></i> &nbsp; +1-202-555-0167</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        4726  Maxwell Farm Road<br>
+                                        City,<br>
+                                        Country.
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                                        <a class="social" href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+                                        <a class="social" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+    </div>
+
+<!---End of Contact-->
+
+
+<!--Footer-->
+    <footer id="footer">
+      <p>@CopyRight 2019 <strong>REHAN KHAN</strong><br>
+        To Contact me  <a href="mailto:rehankhancr25@gmail.com" target="_blank">Click here</a>
+      </p>
+    </footer>
+
+<!---End of Footer--->
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
