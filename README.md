@@ -1,4 +1,4 @@
-# Photofolio [![Netlify Status](https://api.netlify.com/api/v1/badges/1530e16b-f6f9-4a73-ac56-f8fcb9c5b031/deploy-status)](https://app.netlify.com/sites/thephotofolio/deploys)
+# Photofolio ![Author -Rehan Khan](https://img.shields.io/badge/Author-Rehan%20Khan-blue) [![Netlify Status](https://api.netlify.com/api/v1/badges/1530e16b-f6f9-4a73-ac56-f8fcb9c5b031/deploy-status)](https://app.netlify.com/sites/thephotofolio/deploys)
 
 ## A minimal portfolio template for Photographers!
 
