@@ -25,7 +25,7 @@ $ git remote remove origin
 
 # Step 1 - STRUCTURE
 
-Go to `index.html` and fill your information, they are 6 sections:
+Go to `index.html` and fill your information, they are 5 sections:
 
 # Header section
 
